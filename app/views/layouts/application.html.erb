@@ -8,15 +8,19 @@
 </head>
 <body id="store">
 <div id="banner">
-  <%= image_tag("logo.png", size: "40x40") %>
+  <%= image_tag("logo.png") %>
   <%= @page_title || "Books Store" %>
 </div>
 <div id="columns">
   <div id="side">
-    <a href="#">Home</a><br />
-    <a href="#">FAQ</a><br />
-    <a href="#">News</a><br />
-    <a href="#">Contact</a><br />
+    <div id="cart">
+      <%= render current_cart %>
+    </div>
+
+    <a href="#">Home</a>
+    <a href="#">FAQ</a>
+    <a href="#">News</a>
+    <a href="#">Contact</a>
   </div>
   <div id="main">
     <%= yield %>
