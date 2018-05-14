@@ -1,2 +1,6 @@
-<h1>Admin#index</h1>
-<p>Find me in app/views/admin/index.html.erb</p>
+<h1>Welcome</h1>
+
+Time: <%= Time.now %> <br>
+There are <%= pluralize(@total_orders, "order") %>.
+
+<%= button_to 'Logout', '/logout', :method => :delete %>
