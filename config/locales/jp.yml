@@ -29,35 +29,34 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+jp:
   layouts:
     application:
-      home: "Home"
-      title: "Books Store"
-      faq: "FAQ"
-      news: "News"
-      contact: "Contact"
-      orders: "Orders"
-      products: "Products"
-      users: "Users"
-      logout: "Logout"
-      login: "Log In"
+      home: "ホーム"
+      title: "ブックストア"
+      faq: "Q＆A"
+      news: "ニュース"
+      contact: "お問い合わせ"
+      orders: "注文"
+      products: "製品"
+      users: "ユーザー"
+      logout: "ログアウト"
+      login: "ログイン"
   store:
       index:
-        title: "Products List"
-        add: "Add to Cart"
+        title: "製品リスト"
+        add: "カートに追加"
   carts:
     cart:
-      title: "Your cart"
-      empty_cart: "Empty cart"
-      checkout: "Checkout"
+      title: "あなたのカート"
+      empty_cart: "空のカート"
+      checkout: "チェックアウト"
 
   number:
       currency:
         format:
-          unit: "$"
+          unit: "¥"
           precision: 2
           separator: "."
           delimiter: ","
           format: "%u%n"
-

@@ -11,7 +11,7 @@
 <body id="store">
 <div id="banner">
   <%= image_tag("logo.png") %>
-  <%= @page_title || "Books Store" %>
+  <%= @page_title || t('.title') %>
 </div>
 <div id="columns">
   <div id="side">
@@ -21,21 +21,21 @@
       <% end %>
     </div>
 
-    <a href="#">Home</a><br />
-    <a href="#">FAQ</a><br />
-    <a href="#">News</a><br />
-    <a href="#">Contact</a><br />
+    <a href="#"><%= t('.home') %></a><br />
+    <a href="#"><%= t('.faq') %></a><br />
+    <a href="#"><%= t('.news') %></a><br />
+    <a href="#"><%= t('.contact') %></a><br />
 
     <% if session[:user_id] %>
       <br/>
-      <%= link_to 'Orders', '/orders' %><br />
-      <%= link_to 'Products', '/products' %><br />
-      <%= link_to 'Users', '/users' %><br />
-      <%= button_to 'Logout', '/logout', :method => :delete %>
+      <%= link_to t('.orders'), '/orders' %><br />
+      <%= link_to t('.products'), '/products' %><br />
+      <%= link_to t('.users'), '/users' %><br />
+      <%= button_to t('.logout'), '/logout', :method => :delete %>
       <br/>
     <% else %>
       <br/>
-      <%= link_to 'Log In', login_path %><br />
+      <%= link_to t('.login'), login_path %><br />
     <% end %>
   </div>
   <div id="main">
