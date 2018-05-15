@@ -30,4 +30,53 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  layouts:
+    application:
+      home: "Home"
+      title: "Books Store"
+      faq: "FAQ"
+      news: "News"
+      contact: "Contact"
+      orders: "Orders"
+      products: "Products"
+      users: "Users"
+      logout: "Logout"
+      login: "Log In"
+  store:
+      index:
+        title: "Products List"
+        add: "Add to Cart"
+  carts:
+    cart:
+      title: "Your cart"
+      empty_cart: "Empty cart"
+      checkout: "Checkout"
+
+  number:
+      currency:
+        format:
+          unit: "$"
+          precision: 2
+          separator: "."
+          delimiter: ","
+          format: "%u%n"
+
+  orders:
+      new:
+        legend: "Enter your information"
+      form:
+        name: "Name"
+        address: "Address"
+        pay_type: "Payment Type"
+        pay_type_combo: "Select a payment method"
+        submit: "Checkout"
+
+  activerecord:
+        models:
+          cod: "Cash on delivery"
+          bankcard: "Bank Card"
+          type3: "Type 3"
+          type4: "Type 4"
+
+  thanks: "Thank you for your order"
+
