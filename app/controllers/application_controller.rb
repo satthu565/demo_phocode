@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  before_filter :authorize
   protect_from_forgery with: :exception
 
   private
@@ -12,4 +13,13 @@ class ApplicationController < ActionController::Base
   end
 
   helper_method :current_cart
+
+  protected
+
+  def authorize
+    @user = User.find_by_id(session[:user_id])
+    if @user == nil
+      redirect_to '/login', :notice => 'You must login first'
+    end
+  end
 end
