@@ -29,6 +29,14 @@ class User < ActiveRecord::Base
     end
   end
 
+  after_destroy :check_user_empty
+
+  def check_user_empty
+    if User.count.zero?
+      raise "Can't delete last user"
+    end
+  end
+
   private
   def password_must_be_present
     if hashed_password.present? == false
