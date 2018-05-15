@@ -60,3 +60,34 @@ jp:
           separator: "."
           delimiter: ","
           format: "%u%n"
+
+  orders:
+      new:
+        legend: "あなたの情報を入力してください"
+      form:
+        name: "名前"
+        address: "住所"
+        pay_type: "払いの種類"
+        pay_type_combo: "払いの種類を選んでください"
+        submit: "チェックアウト"
+
+  activerecord:
+      models:
+        order: "注文"
+      attributes:
+        order:
+          name: "名前"
+          address: "住所"
+          email: "メール"
+          pay_type: "お支払い方法"
+      errors:
+        messages:
+          blank: "空であってはいけません"
+          inclusion: "リストに含まれていない"
+        template:
+          body: "エラーは次のフィールドで発生しました："
+        header:
+          one: "1エラーが発生しました"
+          other: "%{count} エラーが発生しました"
+
+  thanks: "ご注文ありがとうございます"

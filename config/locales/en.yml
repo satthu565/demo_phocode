@@ -61,3 +61,15 @@ en:
           delimiter: ","
           format: "%u%n"
 
+  orders:
+      new:
+        legend: "Enter your information"
+      form:
+        name: "Name"
+        address: "Address"
+        pay_type: "Payment Type"
+        pay_type_combo: "Select a payment method"
+        submit: "Checkout"
+
+  thanks: "Thank you for your order"
+
