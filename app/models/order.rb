@@ -1,6 +1,6 @@
 class Order < ApplicationRecord
   has_many :line_items, :dependent => :destroy
-  PAYMENT_TYPES = [ "Cash on delivery", "Ngân lượng", "Bảo Kim", "Bank Card" ]
+  PAYMENT_TYPES = [ I18n.t('activerecord.models.cod'), I18n.t("activerecord.models.bankcard"), I18n.t("activerecord.models.type3"), I18n.t("activerecord.models.type4") ]
 
   validates :name, :address, :email, :pay_type, :presence => true
   validates :pay_type, :inclusion => PAYMENT_TYPES

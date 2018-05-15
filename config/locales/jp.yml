@@ -74,6 +74,10 @@ jp:
   activerecord:
       models:
         order: "注文"
+        cod: "代金引換"
+        bankcard: "キャッシュカード"
+        type3: "タイプ3"
+        type4: "タイプ4"
       attributes:
         order:
           name: "名前"

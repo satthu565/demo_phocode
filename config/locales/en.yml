@@ -71,5 +71,12 @@ en:
         pay_type_combo: "Select a payment method"
         submit: "Checkout"
 
+  activerecord:
+        models:
+          cod: "Cash on delivery"
+          bankcard: "Bank Card"
+          type3: "Type 3"
+          type4: "Type 4"
+
   thanks: "Thank you for your order"
 
