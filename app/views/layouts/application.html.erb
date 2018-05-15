@@ -10,6 +10,10 @@
 </head>
 <body id="store">
 <div id="banner">
+  <%= form_tag '/', :class => 'locale', :method => :get do %>
+      <%= link_to "English", {:locale => 'en'} %>
+      <%= link_to "Japan", {:locale => 'jp'} %>
+    <% end %>
   <%= image_tag("logo.png") %>
   <%= @page_title || t('.title') %>
 </div>
